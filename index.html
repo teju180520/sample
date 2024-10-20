@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(233, 211, 233);
+        width: 100%;
+        height:50px;
+        position: fixed;
+    }
+    .navleft{
+        display: flex;
+    }
+    .navleft p{
+        padding:0px 15px;
+    }
+    .navright i{
+        padding:0px  10px;
+    }
+    .section2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    .brand{
+        font-size: 3em;
+    }
+    span{
+        border: 2px solid rgb(238, 219, 219);
+        font-size:60px;
+        color:orangered;
+    }
+    .search{
+        border: 2px solid rgb(238, 219, 219);
+        width:50%;
+        
+    }
+      input{
+        width:90%;
+        height: 100%;
+        font-size: 30px;
+      }
+      .righticons{
+        font-size:20px;
+        border: 2px solid rgb(229, 210, 210);
+        padding:20px;
+        color: red;
+      }
+      option{
+        font-size:30px;
+        
+      }
+      .section3{
+        display: flex;
+        justify-content:space-between;
+        font-size:30px;
+        align-items: center;
+      }
+      .sec3right{
+        width:200px;
+        
+      }
+      .sec3middle{
+        display: flex;
+        padding: 10px;
+      }
+      .sec3middle p{
+        display: flex;
+        padding: 20px;
+      }
+      .sec3left{
+        display: flex;
+      }
+      .sec3left div{
+        padding: 10px;
+      }
+      .section4{
+        overflow: hidden;
+        border: 2px solid red;
+      }
+
+
+
+
+     .item img{
+      height: 100vh;
+     }  
+     .sec4a{
+
+      flex-basis: 30%;
+     } 
+     .sec4b{
+      flex-basis: 70%;
+     } 
+      .section5{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .sec5a{
+        display: flex;
+        width:20%;
+        border: 1px solid gold;
+        font-size:20px;
+        align-items: center;
+      }
+      .sec5a i~p{
+        padding: 0px 40px;
+      }
+      .sec5b{
+        display: flex;
+        width:20%;
+        border: 1px solid gold;
+        font-size:20px;
+        align-items: center;
+      }
+      .sec5b  i~p{
+        padding: 0px 40px;
+      }
+      .sec5c{
+        display: flex;
+        width:20%;
+        border: 1px solid gold;
+        font-size:20px;
+        align-items: center;
+      }
+      .sec5c i~p{
+        padding: 0px 40px;
+      }
+      .sec5d{
+        display: flex;
+        width:20%;
+        border: 1px solid gold;
+        font-size:20px;
+        align-items: center;
+      }
+      .sec5d i~p{
+        padding: 0px 40px;
+      }
+      .section6{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:100px;
+        justify-content: space-around;
+      }
+      .child1{
+        width:60%;
+        border: 2px solid whitesmoke;
+        overflow: hidden;
+      }
+      .pic1{
+        border: 2px solid whitesmoke;
+        width: 300px;
+      }
+      
+      .child1:hover{
+        
+        border: 3px solid whitesmoke;
+        width: 300px;
+      }
+      .pic3 img:hover{
+        border: 3px solid whitesmoke;
+        width: 300px;
+      }
+
+      .pic2{
+        border: 2px solid whitesmoke;
+        width: 300px;
+        
+      }
+      .pic3{
+        border: 2px solid whitesmoke;
+        width: 300px;
+        
+      }
+      .pic4{
+        border: 2px solid whitesmoke;
+        width: 300px;
+        
+      }
+      .pic5{
+        border: 2px solid whitesmoke;
+        width: 300px;
+        
+      }
+      .pic6{
+        border: 2px solid whitesmoke;
+        width: 300px;
+        
+      }
+      .section7{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        gap: 100px;
+      }
+      .card1{
+        width:30%;
+        height:40%;
+      }
+      .sec7a{
+        display: flex;
+        align-items: center;
+        border: 2px solid whitesmoke;
+        background-color: antiquewhite;
+      }
+      .sec7b{
+        display: flex;
+        align-items: center;
+        border: 2px solid whitesmoke;
+        background-color: antiquewhite;
+      }
+      .trandy{
+        text-align: center;
+      }
+      .sec81 img{
+        width:50%;
+        height: 50%;
+      
+      }
+      .sec81a{ 
+        display: grid;
+        justify-content: center;
+        font-size: 20px;
+        border: 2px solid whitesmoke;
+      }
+      .sec81b{
+        display:flex ;
+        font-size:15px;
+        justify-content: center;
+      }
+      .section8{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:80px 50px;
+        
+      }
+      .sec81{
+        border: 2px solid whitesmoke;
+        width: 100%;
+      overflow: hidden;
+      }
+      .s1:hover{
+        width: 100%;
+      }
+      .s2:hover{
+        width: 130%;
+      }
+      .s3:hover{
+        width: 130%;
+      }
+      .s4:hover{
+        width: 130%;
+      }
+      .s5:hover{
+        width: 130%;
+      }
+      .s6:hover{
+        width: 130%;
+      }
+      .s7:hover{
+        width: 130%;
+      }
+      .s8:hover{
+        width: 130%;
+      }
+    
+     /* From Uiverse.io by OnlyCodeChannel */ 
+.searchBox {
+  display: flex;
+  max-width: 230px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+.section9{
+   display: grid;
+  background-color: rgb(252, 229, 232);
+text-align: center;
+}
+.searchbox{
+  justify-content: center;
+}
+.section10{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 80px 50px;
+}
+ .just{
+  text-align: center;
+  font-size: 20px;
+ }     
+
+      
+</style>
+<body>
+    <div class="section1">
+       <div class="navleft">
+        <p>FAQS</p>
+        <p>help</p>
+        <p>support</p>
+       </div> 
+       <div class="navright">
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+       </div>
+    </div>
+    <br>
+    <br><br>
+    
+    <div class="section2">
+        <div class="brand"><span>E</span>shopper</div>
+        <div class="search"><input type="text" placeholder="search for products"> <i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="righticons">
+            <i class="fa-solid fa-heart" style="border: 1px solid black"></i>
+            <i class="fa-solid fa-cart-shopping" style="border: 1px solid black;"></i>
+             </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+  <div class="section3">
+        <div class="sec3right">
+        <form action="">
+            <fieldset>
+                <label for="category">categories</label>
+                <select name="categorys" id="category">
+                    <optgroup label="menswear">
+                    <option value="womenwear">womenwears</option>
+                    <option value="dresses">dresses</option>
+                    <option value="shirts">shirts</option>
+                    <option value="jeans">jeans</option>
+                    <option value="swimwear">swimwear</option>
+                    <option value="sleepwear">sleepwear</option>
+                    <option value="sportswear">sportswear</option>
+                    <option value="jumpsuits">jumpsuits</option>
+                    <option value="blazers">blazers</option>
+                    <option value="jackets">jackets</option>
+                    <option value="shoes">shoes</option>
+                    </optgroup>
+                </select>
+
+            </fieldset>
+        </form>
+        </div>
+        <div class="sec3middle">
+            <p>home</p>
+            <p>shop</p>
+            <p>shop detail</p>
+            <p>pages</p>
+            <p>contact</p>
+        </div>
+        <div class="sec3left">
+           <div>login</div> 
+           <div>register</div>
+        </div>
+    </div>
+  </div>
+    <br>
+    <div class="section4">
+
+
+     
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="mypics/section4b.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="mypics/section72.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="mypics/section63.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+      </div>
+
+    
+   <br>
+   <br>
+   <div class="section5">
+    <div class="sec5a">
+      <i class="fa-solid fa-check" style="font-size: 30px;"></i>
+      <p>quality product</p> 
+    </div>
+    <div class="sec5b">
+      <i class="fa-solid fa-truck"></i>
+      <p>free shipping</p>
+    </div>
+    <div class="sec5c">
+      <i class="fa-solid fa-bars"></i>
+     <p>14-days return</p>
+    </div>
+    <div class="sec5d">
+      <i class="fa-solid fa-phone" style="font-size: ;"></i>
+     <p>24/7 support</p>
+    </div>
+   </div>
+   <br>
+   <br>
+   <br>
+   <div class="section6">
+
+
+   <div class="pic1">
+    <p>15 products</p>
+    <img src="mypics/section64.jpg" alt="" class="child1">
+    <p>men's dresses</p>
+   </div>
+
+   <div class="pic2">
+    <p>15 products</p>
+    <img src="mypics/section66.jpg" alt="" class="child1">
+    <p>women'sndresses</p>
+   </div>
+
+   <div class="pic3">
+   <p>15 products</p>
+   <img src="mypics/section71.jpg" alt="" class="child1" height="200px">
+   <p>baby's dresses</p>
+   </div>
+
+   <div class="pic4">
+    <p>15 products</p>
+    <img src="mypics/section72.jpg" alt="" class="child1">
+    <p>baby's dresses</p>
+   </div>
+
+   <div class="pic5">
+    <p>15 products</p>
+    <img src="mypics/section63.jpg" alt="" class="child1">
+    <p>accerssories</p>
+   </div>
+
+   <div class="pic6">
+    <p>15 products</p>
+    <img src="mypics/section72.jpg" alt="" class="child1">
+    <p>bags</p>
+   </div>
+      </div>
+      <br><br>
+      <hr>
+      <br>
+      <br>
+
+
+    <div class="section7">
+      <div class="sec7a">
+        <img src="mypics/section4b.jpg" class="card1" alt="">
+        <div>
+          <p>20% off the all order</p>
+          <h2>spring collection</h2>
+          <button>shop now</button>
+        </div>
+      </div>
+      <div class="sec7b">
+        <img src="mypics/section61.jpg" class="card1" alt="">
+      
+      <div>
+        <p>20% off the all order</p>
+        <h2>winter collection</h2>
+        <button>shop now</button>
+      </div>
+      </div>
+    </div> 
+    <br>
+    <br>
+    <h1 class="trandy">Trandy Products</h1>
+    <br>
+    <br>
+    <div class="section8">
+      <div class="sec81">
+        <img src="mypics/section64.jpg" class="s1" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec81">
+        <img src="mypics/section72.jpg" class="s2"  alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sec81">
+        <img src="mypics/section61.jpg" class="s3" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sec81">
+        <img src="mypics/section63.jpg" class="s4" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec81">
+        <img src="mypics/section64.jpg" class="s5" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sec81">
+        <img src="mypics/section72.jpg" class="s6" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec81">
+        <img src="mypics/section71.jpg" class="s7" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sec81">
+        <img src="mypics/section66.jpg" class="s8" alt="">
+        <div class="sec81a">
+        <p>colorful stylish shirt</p>
+        <p>$123.00</p>
+        </div>
+        <div class="sec81b">
+          <div>
+          <i class="fa-regular fa-eye"></i></div>
+          <div>
+          <p>view detials</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+          <p>add to cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     <br>
+     <br>
+     <br>
+  
+     <hr>
+    <div class="section9">
+      <h1>stay updated</h1>
+      <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore</p>
+      
+      <div class="searchBox">
+      
+                  <input class="searchInput" type="text" name="" placeholder="Search something">
+                  <button class="searchButton" href="#">
+                         
+                        
+      
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+        <g clip-path="url(#clip0_2_17)">
+          <g filter="url(#filter0_d_2_17)">
+            <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="4"></feOffset>
+            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+          </filter>
+          <clipPath id="clip0_2_17">
+            <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+                           
+      
+                  </button>
+              </div>
+      
+      
+              
+            </div>
+<br>
+<br>
+<br>
+
+  <h1 class="just">just arrived</h1>
+
+  <div class="section10">
+    <div class="sec81">
+      <img src="mypics/section64.jpg" class="s1" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec81">
+      <img src="mypics/section72.jpg" class="s2"  alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sec81">
+      <img src="mypics/section61.jpg" class="s3" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sec81">
+      <img src="mypics/section63.jpg" class="s4" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec81">
+      <img src="mypics/section64.jpg" class="s5" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sec81">
+      <img src="mypics/section72.jpg" class="s6" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec81">
+      <img src="mypics/section71.jpg" class="s7" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sec81">
+      <img src="mypics/section66.jpg" class="s8" alt="">
+      <div class="sec81a">
+      <p>colorful stylish shirt</p>
+      <p>$123.00</p>
+      </div>
+      <div class="sec81b">
+        <div>
+        <i class="fa-regular fa-eye"></i></div>
+        <div>
+        <p>view detials</p>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+        <p>add to cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+          <div class="section11">
+
+
+
+          </div>
+    </body>
+</html>

@@ -1,0 +1,566 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(202, 202, 236);
+  
+    width: 100%;
+}
+.navleft ul{
+    display: flex;
+    list-style-type: none;
+    font-size:30px;
+
+}
+.navright ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 30px;
+}
+.navleft ul li{
+    padding:20px 10px;
+}
+.navright ul li{
+    padding: 20px 20px;
+}
+@media screen and (max-width: 992px){
+      .navleft ul{
+        display: none;
+      }
+      .navright ul {
+        align-items: center;
+        font-size: 50px;
+        padding: 0px 50px;
+      }
+}
+@media screen and (max-width: 500px){
+  .navleft ul{
+    display: none;
+  }
+  .navright ul {
+    align-items: center;
+    font-size: 50px;
+    padding: 0px 50px;
+  }
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.InputContainer {
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+overflow: hidden;
+cursor: pointer;
+padding-left: 15px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+width: 170px;
+height: 100%;
+border: none;
+outline: none;
+font-size: 0.9em;
+caret-color: rgb(255, 81, 0);
+}
+
+.labelforsearch {
+cursor: text;
+padding: 0px 12px;
+}
+
+.searchIcon {
+width: 13px;
+}
+
+.border {
+height: 40%;
+width: 1.3px;
+background-color: rgb(223, 223, 223);
+}
+
+.micIcon {
+width:20px;
+}
+
+.micButton {
+padding: 0px 15px 0px 12px;
+border: none;
+background-color: transparent;
+height: 30px;
+cursor: pointer;
+transition-duration: .3s;
+}
+
+.searchIcon path {
+fill: rgb(114, 114, 114);
+}
+
+.micIcon path {
+fill: rgb(255, 81, 0);
+}
+
+.micButton:hover {
+background-color: rgb(255, 230, 230);
+transition-duration: .3s;
+}
+.icon{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+}
+.ileft{
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.ileft span{
+border: 5px solid whitesmoke;
+color: rgb(187, 30, 56);
+font-size:50px;
+}
+.search{
+width:50%;
+}
+.iright{
+display:flex;
+border: 5px solid whitesmoke;
+}
+.iright div{
+padding:10px;
+font-size:20px;
+}
+.secmiddle ul{
+display:flex;
+list-style-type: none;
+}
+.secmiddle li{
+padding:30px;
+font-size:25px;
+}
+ li a{
+    text-decoration: none;
+}
+.secright{
+display: flex;
+}
+.secright p a{
+padding: 9px;
+font-size:25px ;
+text-decoration: none;
+}
+
+@media screen and (max-width: 992px){
+     .ileft{
+      display: none;
+     }
+     .search{
+      width:70%;
+     }
+}
+@media screen and (max-width:500px){
+  .ileft{
+   display: none;
+  }
+  .search{
+   width:70%;
+  }
+}
+
+.section1{
+display: flex;
+justify-content: space-between;  
+padding: 10px; 
+align-items: center; 
+}
+
+@media screen and (max-width: 990px){
+           .secmiddle{
+            display: none;
+           }
+}
+@media screen and (max-width: 500px){
+  .secmiddle{
+   display: none;
+  }
+}
+
+.slide div  img{
+width: 100%;
+height:100vh;
+}
+/*img{
+width: 100%;
+height: auto;
+}*/
+.slide{
+display: flex;
+justify-content: end;
+flex-basis:70%;
+}
+.slide .hp{
+    color: white;
+}
+.slide div h5,p{
+font-size: 30px;
+color:black;
+}
+.b1:hover{
+background-color: burlywood;
+}
+
+
+@media screen and (max-width: 990px){
+      .slide{
+        flex-basis: 100%;
+      }
+}
+
+@media screen and (max-width: 500px){
+  .slide{
+    flex-basis: 100%;
+  }
+}
+
+.section2{
+display: flex;
+justify-content: space-evenly;
+}
+.sec1{
+display: flex;
+border: 5px solid whitesmoke;
+padding: 10px;
+font-size:25px;
+align-items: center;
+}
+.sec1 div{
+padding: 5px;
+}
+.i1{
+color: rgb(217, 93, 113);
+font-size:40px;
+}
+@media screen and (max-width: 990px){
+  .section2{
+    display: block;
+  }
+}
+@media screen and (max-width: 500px){
+  .section2{
+    display: block;
+  }
+}
+
+
+.pic1{  width: 100%;
+border: 2px solid whitesmoke; 
+}
+.pic1a{
+border: 1px solid whitesmoke;
+overflow: hidden;
+}
+.pic1a1:hover{
+transform: scale(1.4);
+}
+.pic1a1{
+width:40%;  
+height: 50vh;
+}
+.pic1a1 img{
+height: 400px;
+width:300px;
+}
+.section3{
+display: grid;
+grid-template-columns:1fr 1fr 1fr;
+justify-content: space-evenly;
+gap:60px;
+}
+@media screen and (max-width: 990px){
+  .section3{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 500px){
+  .section3{
+    display: block;
+  }
+}
+
+/*img{ 
+height: 100px;
+width: 100%;
+}*/
+
+.section4{
+width: 100%;
+display: flex;
+justify-content: space-between;
+gap:100px;
+}
+
+.sec4a{
+display: flex;
+background-color: rgb(213, 213, 249);
+width: 100%;
+height: 30vh;
+font-size: 10px;
+padding: 15px;
+}
+.sec4b{
+display: flex;
+background-color: rgb(213, 213, 249);
+width: 100%;
+height:30vh;
+font-size: 10px;
+padding: 15px;
+}
+img{
+width: 100%;
+height: auto;
+}
+.sec4a img{
+width:30%;
+}
+.sec4b img{
+width:30%;
+}
+.sec4a p,h1, button,img{
+padding:10px;
+}
+.sec4b p,h1, button,img{
+padding:10px;
+}
+.b1:hover{
+background-color: rgb(94, 210, 210);
+
+}
+@media screen and (max-width: 990px){
+  .section4{
+    display:block;
+  }
+}
+@media screen and (max-width: 500px){
+  .section4{
+    display:block;
+  }
+}
+
+.section5{
+display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+justify-content: space-evenly;
+gap:60px;
+}
+img{ 
+width:100%;
+height: auto;
+}
+.trandy{
+text-align: center;
+font-size:40px;
+}
+.view{
+display: flex;
+justify-content:space-between;
+
+}
+.viewleft{
+display: flex;
+
+}
+.viewright{
+display: flex;
+}
+.view span{
+color: rgb(194, 17, 47);
+font-size:20px;
+}
+.e1{
+font-size:18px;
+}
+.el{
+text-align: center;
+}
+
+@media screen and (max-width: 990px){
+  .section5{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 500px){
+  .section5{
+    display:grid;
+    grid-template-columns: auto;
+  }
+}
+
+/* From Uiverse.io by OnCloud125252 */ 
+.inputBox_container {
+display: flex;
+align-items: center;
+flex-direction: row;
+max-width: 14em;
+width: fit-content;
+height: fit-content;
+background-color: #5c6370;
+border-radius: 0.8em;
+overflow: hidden;
+}
+
+.search_icon {
+height: 1em;
+padding: 0 0.5em 0 0.8em;
+fill: #abb2bf;
+}
+
+.inputBox {
+background-color: transparent;
+color: #ffffff;
+outline: none;
+width: 100%;
+border: 0;
+padding: 0.5em 1.5em 0.5em 0;
+font-size: 1em;
+}
+
+::placeholder {
+color: #abb2bf;
+}
+.section6{
+text-align: center;
+background-color:rgb(232, 232, 246);
+padding: 20px;
+}
+.sec6a{
+font-size:40px;
+padding:10px;
+}
+.sec6b{
+font-size: 20px;
+}
+.section7{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: space-evenly;
+gap: 60px;
+}
+@media screen and (max-width: 990px){
+  .section7{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 500px){
+  .section7{
+    display:grid;
+    grid-template-columns: auto;
+  }
+}
+
+
+/*img{
+width: 100%;
+height: auto;
+}*/
+.just{
+text-align: center;
+font-size: 50px;
+}
+.slide img{
+width:100%;
+height:20vh;
+filter:brightness(1);
+}
+.section9{
+background-color: rgb(243, 243, 249);
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-content: space-evenly;
+padding: 100px;
+}
+.sec9a{
+line-height:1;
+padding:10px;
+
+}
+.loc{
+align-items: center;
+display: flex;
+font-size: 20px;
+}
+.mail{
+align-items: center;
+display: flex;
+font-size:20px;
+}
+.phone{
+align-items: center;
+display: flex;
+font-size: 20px;
+}
+.quick{
+text-align: center;
+padding: 10px;
+}
+.form{
+text-align: center;
+padding: 10px;
+}
+.icon2{
+font-size:60px;
+}
+.icon2 span{
+border: 2px solid grey;
+font-size: 80px;
+padding: 10px;
+color: rgb(215, 36, 65);
+}
+.sec1{
+font-size: 20px;
+}
+.i2{
+font-size:15px;
+padding: 0px 30px;
+}
+.quick{
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+}
+.form button:hover{
+background-color: #abb2bf;
+}
+.sec9a1{
+  padding: 0px 20px;
+}
+@media screen and (max-width: 990px){
+  .section9{
+    display:grid;
+    grid-template-columns: auto;
+  }
+  .sec9a{
+    padding:0px  100px; 
+  }
+}
+@media screen and (max-width: 500px){
+  .section9{
+    display:grid;
+    grid-template-columns: auto;
+    padding:50px;
+  }
+  .sec9a{
+    padding:0px  100px; 
+  }
+}
